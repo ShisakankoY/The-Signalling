@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Signalling</title>
+  <meta name="description" content="鉄道や乗り物に関する情報を、気まぐれでご紹介するサイトです。指差喚呼(しさかんこ)についても特集します。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="#">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/Signalling1.png" alt="ナビバーロゴ" width="30" height="30"
+            class="d-inline-block align-text-top me-2 nameLogo">
+          The Signalling
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Signalling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#introduction">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#newsBox">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#content">Content</a>
+              </li>
+              <!--一次的に消去(必要に応じて復元)
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            -->
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+              <button class="btn btn-outline-success" type="submit" id="searchBtn">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!--ドリームリフタースライドアニメーション-->
+    <img src="images/DREAMLIFTER2.png" id="dreamlifter">
+    <section class="topPage">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" width="100" height="auto">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/TopPage.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/nikkoTopPage.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--新幹線スライドアニメーション-->
+    <img src="images/e4Shinkansen.png" id="shinkansen">
+    <section>
+      <div class="lateral greet areaBorder">
+        <div>
+          <h3>The Signallingへようこそ!</h3>
+          <p>当サイトでは、鉄道を主に、乗り物の情報をご紹介いたします。</p>
+          <p>また、業種問わず、指差喚呼についてもご紹介いたします!</p>
+          <p>ここにしかないレア情報となりますので、どうぞごゆっくりお過ごしください!</p>
+        </div>
+      </div>
+    </section>
+    <section class="areaBorder" id="introduction">
+      <div class="lateral">
+        <div>
+          <img src="images/signallingPerson.png" alt="管理者ロゴ" id="myLogo">
+        </div>
+        <div id="me">
+          <h4>管理者紹介</h4>
+          <h5>管理者：ShisakankoY</h5>
+          <h6>ひとこと</h6>
+          <p>管理者のShisakankoYと申します。</p>
+          <p>名前の通り、指差喚呼が大好きで、これまで多くの喚呼を調査してきました。</p>
+          <p>当サイトでは、ここにしかない、喚呼情報もありますので、</p>
+          <p>どうぞよろしくお願い致します!</p>
+        </div>
+      </div>
+    </section>
+    <section id="newsBox">
+      <h4>News</h4>
+      <a href="News/NewsTopPage.html" class="redirect">News一覧へ</a>
+    </section>
+    <section id="content">
+      <h4 class="h4ForContent">Content</h4>
+      <div class="container text-center">
+        <div class="row row-cols-4 g-4">
+          <!-- カード1 -->
+          <div class="col d-flex align-items-stretch contentSection">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center gap-3 w-100"
+              style="min-height: 300px;">
+              <img src="images/signallingPerson.png" alt="指差喚呼コンテンツ見出しロゴ" class="logoImage">
+              <h5>指差喚呼系コンテンツ</h5>
+              <a href="#" class="contentLink">Coming soon...</a>
+            </div>
+          </div>
+
+          <!-- カード2 -->
+          <div class="col d-flex align-items-stretch contentSection">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center gap-3 w-100"
+              style="min-height: 300px;">
+              <img src="images/205Cab.JPG" alt="鉄道コンテンツ見出しロゴ" class="logoImage">
+              <h5>鉄道系コンテンツ</h5>
+              <a href="#" class="contentLink">Coming soon...</a>
+            </div>
+          </div>
+
+          <!-- カード3 -->
+          <div class="col d-flex align-items-stretch contentSection">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center gap-3 w-100"
+              style="min-height: 300px;">
+              <img src="images/kantoBusBack1.jpg" alt="乗り物コンテンツ見出しロゴ" class="logoImage">
+              <h5>乗り物系コンテンツ</h5>
+              <a href="#" class="contentLink">Coming soon...</a>
+            </div>
+          </div>
+
+          <!-- カード4 -->
+          <div class="col d-flex align-items-stretch contentSection">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center gap-3 w-100"
+              style="min-height: 300px;">
+              <img src="images/ayuSashimiHead.png" alt="ブログ風コンテンツ見出しロゴ" class="logoImage">
+              <h5>ブログ風コンテンツ</h5>
+              <a href="#" class="contentLink">Coming soon...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer-container">
+    <p>©2025 ShisakankoY</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="JavaScript/script.js"></script>
+</body>
+
+</html>

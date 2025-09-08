@@ -1,0 +1,204 @@
+/*footerスタイル*/
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #BFC5CA;
+}
+
+/* カルーセル全体の幅を画面幅の60%にして中央寄せ */
+#carouselExampleAutoplaying {
+  width: 50vw;
+  /* ビューポート幅の60% */
+  margin: 0 auto;
+  /* 左右中央寄せ */
+}
+
+/* 画像をカルーセルの幅にフィットさせる */
+#carouselExampleAutoplaying .carousel-item img {
+  width: 100%;
+  height: auto;
+  /* 縦横比を保つ */
+}
+
+/*トップ*/
+.topPage {
+  padding-top: 80px;
+  /*被り対策*/
+  padding-bottom: 30px;
+  background-color: #7CD0F2;
+}
+
+/*ロゴ写真(円形化・コンテンツ欄調整*/
+.logoImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin-left: 0;
+}
+
+/*自己紹介ロゴ専用のサイズ指定(共通スタイルに入れると、スタイルが崩れる*/
+#myLogo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-left: 50%;
+}
+
+/*自己紹介文調整*/
+#me {
+  margin-left: 20%;
+}
+
+/*コンテンツ間隔*/
+.areaBorder {
+  margin: 5%;
+}
+
+/*中央揃え*/
+.lateral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*トップあいさつの中央揃え*/
+.greet {
+  justify-content: center;
+  align-items: center;
+}
+
+/*サイト内スクロール時に、アンカー位置がナビバー位置に隠れないようにする*/
+#introduction {
+  scroll-margin-top: 80px;
+}
+
+/*スムーズスクロール*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*新幹線画像*/
+#shinkansen {
+  width: 50%;
+  height: auto;
+}
+
+/*ニュース欄*/
+#newsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*ニュース欄のアンカー下線消去*/
+#newsBox a {
+  text-decoration: none !important;
+  color: black;
+}
+
+/*ニュース見出しロゴ*/
+.newsLogo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/*ボタン装飾(News)*/
+.redirect {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  background-color: #C0C0C0;
+  padding: 10px;
+  width: 20%;
+  height: 10%;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+
+/*ナビバーのロゴ補正*/
+.nameLogo {
+  border-radius: 50%;
+}
+
+/*ニュース一覧のアンカー下線消去*/
+.newsHeading a {
+  text-decoration: none;
+  color: black;
+}
+
+/*ニュース見出しの左寄せ*/
+.newsHeading {
+  display: flex;
+  justify-content: flex-start;
+  /* 左寄せ */
+  align-items: center;
+  gap: 10px;
+}
+
+/*ドリームリフター画像*/
+#dreamlifter {
+  padding-top: 80px;
+  width: 10%;
+  height: auto;
+}
+
+/*コンテンツ欄アンカー下線処理*/
+.contentLink {
+  text-decoration: none;
+  color: black;
+}
+
+/*コンテンツ見出し調整用*/
+.logoImage {
+  max-height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+/*コンテンツ欄全体の見出し*/
+.h4ForContent {
+  text-align: center;
+}
+
+/*レスポンシブ化*/
+@media (max-width: 600px) {
+
+  /*自己紹介ロゴ消去*/
+  #myLogo {
+    display: none;
+  }
+
+  /*自己紹介分マージン消去*/
+  #me {
+    margin-left: 0;
+  }
+
+  /*ナビバー被り対策のパディング調整*/
+  .topPage {
+    padding-top: 30px;
+  }
+
+  /*ニュースボタン幅調整*/
+  .redirect {
+    width: auto;
+    height: auto;
+  }
+
+  /*コンテンツ欄間隔整理*/
+  .contentSection {
+    margin: 40px;
+  }
+
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
