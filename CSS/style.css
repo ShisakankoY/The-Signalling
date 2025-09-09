@@ -168,6 +168,12 @@ html {
   text-align: center;
 }
 
+/*画面幅超え対策*/
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 /*レスポンシブ化*/
 @media (max-width: 600px) {
 
@@ -195,10 +201,5 @@ html {
   /*コンテンツ欄間隔整理*/
   .contentSection {
     margin: 40px;
-  }
-
-  html, body {
-    max-width: 100vw;
-    overflow-x: hidden;
   }
 }
