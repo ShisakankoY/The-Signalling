@@ -1,0 +1,14 @@
+/*ヘッダー被り対策*/
+header {
+    margin-bottom: 70px;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.sectionNumber {
+    width: 100px;
+    height: auto;
+}
