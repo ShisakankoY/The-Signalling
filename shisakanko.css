@@ -1,0 +1,47 @@
+/*ヘッダー被り対策*/
+header {
+    margin-bottom: 80px;
+}
+
+/*input装飾*/
+input {
+    display: block;
+    border: 2px solid black;
+    padding: 5px 10px;
+    width: 350px;
+}
+
+/*喚呼アンロック(非表示)*/
+.Tokaido {
+    display: none;
+}
+
+/*ボタン装飾*/
+button {
+    border: 1px solid black;
+    border-radius: 5px !important;
+    padding: 10px 10px;
+    margin: 10px 10px !important;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*間隔あけ*/
+.space {
+    margin-bottom: 32px;
+}
+
+/*喚呼履歴折り返し表示*/
+.grid-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.grid-box span {
+    min-width: 100px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-align: center;
+}

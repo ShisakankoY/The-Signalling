@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Signalling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/shisakanko.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="../images/Signalling1.png" alt="ナビバーロゴ" width="30" height="30"
+                        class="d-inline-block align-text-top me-2 nameLogo">
+                    The Signalling
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Signalling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                id="searchInput">
+                            <button class="btn btn-outline-success" type="submit" id="searchBtn">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h4>指差喚呼自作シュミレーター</h4>
+            <p>当コンテンツでは、作り方をもとに、喚呼を自作していただきます。</p>
+            <p>作った数に応じて、実際に使われている喚呼が少しずつ見れるようになりますので、
+                ぜひたくさん作って指差喚呼をより知り、身近に感じてください。</p>
+            <p>(「よし」というワードが入っていると、受理されます。)</p>
+            <h5>作り方</h5>
+            <p>「確かめるもの＋状態＋よし」</p>
+            <p>「確かめるもの＋行動＋よし」</p>
+            <p>このどちらかになります。</p>
+        </section>
+        <br>
+        <section>
+            <h5 class="space">それでは喚呼を作ってみましょう!</h5>
+            <input type="text" id="input" placeholder="ここに喚呼を入力下さい">
+            <button type="button" id="Btn">決定</button>
+            <button type="button" id="Btn2">データ消去</button>
+            <div id="text" class="grid-box"></div>
+        </section>
+        <section>
+            <div contenteditable="true" class="Tokaido" id="Tokaido1">
+                <b>解禁された喚呼</b>
+                <br>
+                <b>東海道線(熱海~浜松)車掌の喚呼</b>
+                <br>
+                出発時
+                「信号オーライ、時刻オーライ、(チャイム鳴らす)、乗降終了、ドア閉、ドア・ホームオーライ、発車(ブザー鳴らす)、後方オーライ」
+                <br>
+                到着時
+                「○両停止位置オーライ(フロアサイン)、自動or.半自動(ドアキー)、ドア開、点灯オーライ(側灯)」
+                <br>
+                ※ドアキーはそこしか言わない(統一されているのはそこだけ)
+            </div>
+            <div contenteditable="true" class="Tokaido" id="Tokaido2">
+                車掌のカード
+                <br>
+                放送ポイントを見つけたら
+                <br>
+                「○○(駅名)、停車、○分○秒」
+                <br>
+                放送したら、
+                <br>
+                「○○(駅名)、停車、○分○秒、ホーム左or.右、○両」
+                <br>
+                ※番線の喚呼なし
+                <br>
+                ※喚呼は統一
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <p>©2025 ShisakankoY</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/myShisakanko.js"></script>
+</body>
+
+</html>
