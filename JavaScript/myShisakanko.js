@@ -67,6 +67,10 @@ const Btn2 = document.getElementById('Btn2');
 
 Btn2.addEventListener('click', () => {
     const deletePass = prompt("履歴データを消去する場合は、14736と入力してください。");
+    if (deletePass === null) {
+        return;
+    }
+    
     if (deletePass === "14736") {
         localStorage.removeItem('kanko');
         localStorage.removeItem('count');
@@ -74,6 +78,8 @@ Btn2.addEventListener('click', () => {
         savedCount = 0;
         Tokaido1.style.display = 'none';
         Tokaido2.style.display = 'none';
+    } else {
+        alert("Error.半角で14736ともう一度やり直してください。");
     }
 });
 
