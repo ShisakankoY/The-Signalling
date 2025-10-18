@@ -64,7 +64,9 @@ function search(event) {
         }
     }
 }
-searchBtn.addEventListener('click', search);
+if (searchBtn) {
+    searchBtn.addEventListener('click', search);
+}
 
 //ローディングアニメーション
 const loading = document.querySelector('.loading');
