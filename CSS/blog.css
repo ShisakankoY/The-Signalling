@@ -1,0 +1,14 @@
+.sectionPic {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+.sectionName {
+    text-decoration: none;
+    color: black;
+}
